@@ -1,0 +1,406 @@
+@charset 'utf-8';
+
+/*공통 CSS*/
+body {
+  width: 360px;
+  margin: 0 auto;
+}
+
+/*플롯해제*/
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*해당 요소를 숨기기 위한 클래스*/
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/*헤더영역*/
+#header {
+  margin-top: 10px;
+}
+
+header .ham {
+  float: left;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+header .search {
+  float: right;
+  padding-right: 10px;
+}
+
+#header .logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*네비영역*/
+/* gnb 영역*/
+#header .gnb {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: none;
+}
+
+#header .gnb li {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  height: 30px;
+}
+
+/*sub_gnb 영역*/
+#header .sub_gnb {
+  margin-top: 10px;
+  display: none;
+  margin-bottom: 10px;
+}
+
+#header .sub_gnb li {
+  margin-top: 10px;
+}
+
+#header .sub_gnb li a {
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+/*배너*/
+#article {
+  width: 360px;
+}
+
+article .benner img {
+  width: 100%;
+  height: 100%;
+}
+
+/*컨텐츠 영역*/
+#section {
+  width: 360px;
+}
+
+/*1. new*/
+.new h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.new .new_menu h1 {
+  font-size: 11px;
+  text-align: center;
+  color: #a9a9a9;
+  margin-bottom: 4px;
+  letter-spacing: -1px;
+}
+
+.new .new_menu h2 {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 9px;
+  letter-spacing: -1px;
+}
+
+.new .new_menu p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #8b0000;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.new .new_menu .new1 {
+  float: left;
+}
+
+.new .new_menu .new1 img {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.new .new_menu .new2 {
+  float: right;
+}
+
+.new .new_menu .new2 img {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.new .circle {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+/*2. best*/
+.best {
+  background-color: #f4f4f4;
+}
+
+.best .best_menu1 h3 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 36px;
+}
+
+.best .best_menu1 h1 {
+  font-size: 11px;
+  text-align: center;
+  color: #a9a9a9;
+  margin-top: 3px;
+}
+
+.best .best_menu1 h2 {
+  font-size: 11px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.best .best_menu1 p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-top: 6px;
+  color: #8b0000;
+}
+
+.best .best_menu .best1 {
+  width: 46.66666666666667%;
+  margin-left: 10px;
+  margin-top: 6px;
+  background-color: #fff;
+  float: left;
+}
+
+.best .best_menu .best1 img {
+  text-align: center;
+}
+
+.best .best_menu .best2 {
+  width: 46.66666666666667%;
+  margin-right: 10px;
+  margin-top: 6px;
+  background-color: #fff;
+  float: right;
+}
+
+.best .best_menu .best2 img {
+  text-align: center;
+}
+
+.best .circle {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+/*3.review*/
+.review h3 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 78px;
+  margin-bottom: 36px;
+}
+
+.review .review_box1 .review_font h1 {
+  font-size: 11px;
+  text-align: left;
+  color: #a9a9a9;
+  letter-spacing: -0.5px;
+  margin-left: 15px;
+  margin-top: 9px;
+}
+
+.review .review_box1 .review_font h2 {
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: -0.5px;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+
+.review .review_box1 .review_font p {
+  font-size: 10px;
+  text-align: left;
+  color: #a9a9a9;
+  margin-left: 15px;
+  margin-top: 9px;
+  letter-spacing: -1px;
+}
+
+.review .review_box1 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.review .line {
+  width: 340px;
+  height: 1px;
+  background-color: #cccccc;
+  margin: 0 auto;
+}
+
+.review .review_box1 .review_img1 {
+  float: left;
+  margin-left: 10px;
+}
+
+.review .review_box1 .review_font {
+  float: left;
+}
+
+.review .circle {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+/*푸터영역*/
+footer .foot {
+  background-color: #000;
+  width: 360px;
+  height: 187px;
+  font-size: 11px;
+  font-weight: 300;
+  color: #fff;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -1px;
+}
+
+/* 팝업창 */
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a:focus {
+  outline: 1px dashed #999;
+}
+
+.container .item-box .item-img {
+  /* display: flex; */
+  margin-top: 20px;
+}
+
+/* .container .item-box .item-img a {
+  display: block;
+  width: 300px;
+  border: 1px solid #1eb9b2;
+} */
+
+.container .item-box .item-img a:nth-child(2n + 2) {
+  margin-left: 20px;
+}
+
+.container .item-box .item-img a img {
+  display: block;
+  width: 100%;
+}
+
+.container .img-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10000;
+}
+
+.container .img-popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .img-popup .popup-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+}
+
+.container .img-popup .popup-inner>img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container .img-popup .popup-inner .close-btn {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: darkmagenta;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.container .img-popup .popup-inner .close-btn i {
+  transition: all 0.3s;
+}
+
+.container .img-popup .popup-inner .close-btn:hover i {
+  transform: rotate(180deg);
+}
+
+@media (max-width:991px) {
+  .container .img-popup .popup-inner {
+    width: 90%;
+  }
+
+  .container .img-popup .popup-inner .close-btn {
+    width: 50px;
+    height: 50px;
+    top: -26px;
+  }
+
+  .container .img-popup .popup-inner .close-btn img {
+    width: 20px;
+  }
+}

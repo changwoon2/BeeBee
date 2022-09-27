@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    width: 360px;
+    margin: 0 auto;
+}
+
+/*헤더영역*/
+#header {
+    margin-top: 10px;
+}
+
+
+header .ham {
+    float: left;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+header .search {
+    float: right;
+    padding-right: 10px;
+}
+
+#header .logo {
+    text-align: center;
+}
+
+/*네비영역*/
+/* gnb 영역*/
+#header .gnb {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: none;
+}
+
+#header .gnb li {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+#header .gnb li a {
+    font-weight: bold;
+    color: #727272;
+
+}
+
+/*sub_gnb 영역*/
+#header .sub_gnb {
+    margin-top: 10px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+#header .sub_gnb li {
+    margin-top: 10px;
+}
+
+#header .sub_gnb li a {
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+/*section 영역*/
+#main_content {
+    margin-top: 10px;
+}
+
+section img {
+    width: 100%;
+}
+
+section h1 {
+    font-size: 13px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+
+section nav {
+    font-size: 13px;
+    color: #222222;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+section nav li {
+    padding-bottom: 14px;
+}
+
+section nav .text2 li:nth-child(1) {
+    color: #898989;
+}
+
+section nav .text2 li:nth-child(2) {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8b0000;
+}
+
+/*section 위치잡기*/
+section nav .text1 {
+    float: left;
+    padding-right: 48px;
+}
+
+/*버튼*/
+section .button button {
+    width: 168px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: table-cell;
+    color: #222222;
+    font-size: 11px;
+}
+
+section .button .cart {
+    margin-left: 10px;
+}
+
+section .button .buy {
+    color: #9e9e9e;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*아티클2 영역*/
+#sub_content .container {
+    padding: 0;
+}
+
+#sub_content .sub_img {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#sub_content h2 {
+    font-size: 0.8125rem;
+    color: #424242;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+#sub_content p {
+    font-size: 0.6875rem;
+    color: #727272;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+#sub_content p:last-child {
+    font-size: 1.125rem;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #ff7272;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sub_banner {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/*아티클3 영역*/
+#third_content {}
+
+#third_content .third_img {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#third_content h2 {
+    font-size: 1.125rem;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #ff7272;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#third_content p {
+    font-size: 0.6875rem;
+    color: #727272;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#third_content .third_img2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*어사이드 영역*/
+aside .top_btn {
+    cursor: pointer;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    color: #262626;
+    text-align: center;
+    line-height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: .7;
+    position: fixed;
+    left: 1090px;
+    bottom: 90px;
+    z-index: 100;
+}
+
+/*버튼*/
+section .button button {
+    width: 168px;
+    height: 36px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: table-cell;
+    color: #222222;
+    font-size: 11px;
+}
+
+section .button .cart {
+    margin-left: 10px;
+}
+
+section .button .buy {
+    color: #9e9e9e;
+}
+
+.cart_btn {
+    margin-top: 40px;
+}
+
+.cart_btn button {
+    font-size: 12px;
+    color: #fff;
+    width: 360px;
+    padding: 14px 0;
+    background-color: #252525;
+    position: fixed;
+    bottom: 0px;
+}
+
+
+
+/*푸터영역*/
+footer .foot {
+    margin-top: 50px;
+    background-color: #000;
+    width: 360px;
+    height: 187px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: -1px;
+}
